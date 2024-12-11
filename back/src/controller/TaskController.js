@@ -26,7 +26,6 @@ router.post('/createTask', (req, res) => {
     res.status(200).json({ message: 'Task deleted successfully' });
   });
 
-  // PUT /updateTask/:id - Update task status
   router.put('/updateTask/:id', (req, res) => {
     const { id } = req.params;
     const { status } = req.body;
